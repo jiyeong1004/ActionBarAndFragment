@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     MyFragment myFrags[] = new MyFragment[3];
 
     ActionBar.TabListener tabListener = new ActionBar.TabListener() {
+
         @Override
         public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
             MyFragment myFrag = null;
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             if(tabName.equals("토끼"))
                 linear.setBackgroundColor((Color.BLUE));
 
-            return super.onCreateView(inflater, container, savedInstanceState);
+            return linear;
         }
     }
 }
