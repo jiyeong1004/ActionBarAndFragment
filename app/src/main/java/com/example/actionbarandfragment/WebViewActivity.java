@@ -17,6 +17,7 @@ public class WebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_web_view);
         editURL = findViewById(R.id.edit_url);
         Button btnMove = findViewById(R.id.btn_move);
